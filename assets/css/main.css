@@ -1,0 +1,165 @@
+:root {
+    --twitter: #55acee;
+    --linkedin: #0077B5;
+    --github: #171515;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(207, 207, 207, 0.596);
+    font-family: 'Nurito', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 120px;
+}
+
+.card {
+    width: 500px;
+    height: 600px;
+    background-color: #f0e3e3;
+    border-radius: 5%;
+    overflow: hidden;
+    position: relative;
+
+    box-shadow: 0 5px 5px 0px rgba(255, 55, 55, 0.4);
+    
+    /* box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4); */
+}
+
+.card__profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.card__header img {
+    width: 100%;
+}
+
+.card__profile img {
+    width: 30%;
+    border-radius: 60%;
+    position: absolute;
+    top: calc(30% - 16px);
+}
+
+.card__title {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.social__container {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.social__container ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.social__container ul li a {
+    display: block;
+    padding: 0 10px;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.social__container ul:hover a {
+    filter: blur(2px);
+}
+
+.social__container ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.social__container ul li .twitter:hover {
+    background-color: var(--twitter);
+}
+
+.social__container ul li .linkedin:hover {
+    background-color: var(--linkedin);
+}
+
+.social__container ul li .github:hover {
+    background-color: var(--github);
+}
+
+
+@media (max-width: 380px) {
+
+    .card {
+        width: 90%;
+        height: 500px;
+    }
+
+    .card__profile {
+        margin-bottom: 40px;
+    }
+    
+    .card__profile img {
+        top: calc(25% - 16px);
+    }
+
+    .card__title {
+        margin-top: 60px;
+    }
+
+    .card__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card__info--description {
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgb(49, 49, 49);
+        padding: 10px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+
+    .card {
+        width: 95%;
+    }
+
+    .card__profile img {
+        top: calc(40% -16px);
+    }
+    
+}
