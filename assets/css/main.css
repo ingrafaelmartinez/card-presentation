@@ -152,18 +152,18 @@ section {
     
 }
 
-@media (max-width: 435px) {
+@media (max-width: 465px) {
 
     .card__profile img {
-        top: calc(28% - 16px);
+        top: calc(30% - 16px);
     }
 
     .card__profile {
-        margin-bottom: 70px;
+        margin-bottom: 80px;
     }
 
     .card__title {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .card__info {
